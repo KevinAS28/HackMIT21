@@ -1,5 +1,8 @@
+import os
+
 from django.contrib import admin
 from django.urls import path
+from django.shortcuts import render, redirect
 
 from .views import CustomersView, OrdersView, PingView, ProductView
 
@@ -18,3 +21,9 @@ urlpatterns = [
 
     path('order/', OrdersView.as_view(), name='order'),
 ]
+
+print(os.getcwd())
+for fname in os.listdir('hackmit/templates/unimplemented'):
+    the_url = f'unimplemented/{fname.split(".")[-2]}/'
+    urlpatterns.append(path(the_url, lambda r: render(r, fname)))
+    print('Added ', the_url)

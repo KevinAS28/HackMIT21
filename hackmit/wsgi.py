@@ -1,5 +1,5 @@
 """
-WSGI config for cockroach_example project.
+WSGI config for hackmit project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cockroach_example.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hackmit.settings')
 
 application = get_wsgi_application()

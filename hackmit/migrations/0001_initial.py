@@ -33,8 +33,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
                 ('subtotal', models.DecimalField(decimal_places=2, max_digits=18)),
-                ('customer', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='cockroach_example.customers')),
-                ('product', models.ManyToManyField(to='cockroach_example.Products')),
+                ('customer', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='hackmit.customers')),
+                ('product', models.ManyToManyField(to='hackmit.Products')),
             ],
         ),
     ]
