@@ -4,7 +4,7 @@ from django.contrib import admin
 from django.urls import path
 from django.shortcuts import render, redirect
 from django.conf import settings
-from django.conf.urls.static import static
+from django.conf.urls.static import static as static_url
 
 
 
@@ -33,8 +33,10 @@ urlpatterns = [
 
     path('read/<int:book_id>/<int:page_num>', read_mode, name='read_mode'),
 
+    path('get_music/<int:emotions_number>/<int:previous_number>/', get_music, name='get_music_prev'),
+    path('get_music/<int:emotions_number>/', get_music, name='get_music'),
 
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
+] + static_url(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
 
 print(os.getcwd())
 for fname in os.listdir('hackmit/templates/unimplemented'):
