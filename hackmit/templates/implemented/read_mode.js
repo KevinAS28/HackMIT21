@@ -13,19 +13,19 @@ $( document ).ready(function () {
 
     function moodToSong(mainMood) {
         if (mainMood == "Angry") {
-            randomSong = "music/angry/" + angryList[Math.floor(Math.random() * 2)] + ".mp3"
+            randomSong = "/music/angry/" + angryList[Math.floor(Math.random() * 2)] + ".mp3"
         }
         else if (mainMood == "Happy") {
-            randomSong = "music/happy/" + happyList[Math.floor(Math.random() * 5)] + ".mp3"     
+            randomSong = "/music/happy/" + happyList[Math.floor(Math.random() * 5)] + ".mp3"     
         }
         else if (mainMood == "Surprise") {
-            randomSong = "music/surprise/" + surpriseList[Math.floor(Math.random() * 6)] + ".mp3"
+            randomSong = "/music/surprise/" + surpriseList[Math.floor(Math.random() * 6)] + ".mp3"
         }
         else if (mainMood == "Sad") {
-            randomSong = "music/sad/" + sadList[Math.floor(Math.random() * 3)] + ".mp3"  
+            randomSong = "/music/sad/" + sadList[Math.floor(Math.random() * 3)] + ".mp3"  
         }
         else if (mainMood == "Fear") {
-            randomSong = "music/fear/" + fearList[Math.floor(Math.random() * 5)] + ".mp3"    
+            randomSong = "/music/fear/" + fearList[Math.floor(Math.random() * 5)] + ".mp3"    
         }
         audio.setAttribute("src", randomSong)
     }
