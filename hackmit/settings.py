@@ -139,3 +139,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    f"{BASE_DIR}/hackmit/static",
+    f"{BASE_DIR}/static",
+    '/var/www/static/',
+]

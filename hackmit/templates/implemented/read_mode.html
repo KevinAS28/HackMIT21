@@ -1,3 +1,8 @@
+{% load static %}
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +12,7 @@
     <title>Reading mode</title>
 </head>
 <body>
+    <audio src="{% static 'my_app/example.jpg' %}">
     <p>{{text}}</p>
 </body>
 </html>
