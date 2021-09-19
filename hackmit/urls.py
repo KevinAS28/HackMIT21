@@ -27,7 +27,7 @@ urlpatterns = [
     path('greetings/', lambda r: render(r, 'greetings.html'), name=f'greetings'),
     path('dashboard/', lambda r: render(r, 'dashboard.html'), name=f'dashboard'),
 
-    path('read/<int:book_id>', read_mode, name='read_mode'),
+    path('read/<int:book_id>/<int:page_num>', read_mode, name='read_mode'),
 ]
 
 print(os.getcwd())
@@ -35,4 +35,4 @@ for fname in os.listdir('hackmit/templates/unimplemented'):
     fname_wo_ext = fname.split(".")[-2]
     the_url = f'unimplemented/{fname_wo_ext}/'
     urlpatterns.append(path(the_url, lambda r: render(r, fname), name=f'unimplemented_{fname_wo_ext}'))
-    print('Added ', the_url)
+    print('Added ', fname, the_url)
