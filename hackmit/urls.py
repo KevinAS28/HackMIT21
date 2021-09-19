@@ -4,7 +4,7 @@ from django.contrib import admin
 from django.urls import path
 from django.shortcuts import render, redirect
 
-from .views import CustomersView, OrdersView, PingView, ProductView
+from .views import *
 
 
 
@@ -27,6 +27,7 @@ urlpatterns = [
     path('greetings/', lambda r: render(r, 'greetings.html'), name=f'greetings'),
     path('dashboard/', lambda r: render(r, 'dashboard.html'), name=f'dashboard'),
 
+    path('read/<int:book_id>', read_mode, name='read_mode'),
 ]
 
 print(os.getcwd())

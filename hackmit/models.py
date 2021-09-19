@@ -1,30 +1,14 @@
 from django.db import models
 import uuid
 
+from hackmit.cockroach_model import *
 
-class Customers(models.Model):
+class Book(models.Model):
     id = models.UUIDField(
         primary_key=True,
         default=uuid.uuid4,
         editable=False)
-    name = models.CharField(max_length=250)
-
-
-class Products(models.Model):
-    id = models.UUIDField(
-        primary_key=True,
-        default=uuid.uuid4,
-        editable=False)
-    name = models.CharField(max_length=250)
-    price = models.DecimalField(max_digits=18, decimal_places=2)
-
-
-class Orders(models.Model):
-    id = models.UUIDField(
-        primary_key=True,
-        default=uuid.uuid4,
-        editable=False)
-    subtotal = models.DecimalField(max_digits=18, decimal_places=2)
-    customer = models.ForeignKey(
-        Customers, on_delete=models.CASCADE, null=True)
-    product = models.ManyToManyField(Products)
+    nick_name = models.CharField(max_length=50, blank=False)
+    file_path = models.CharField(max_length=50, blank=False)
+    converted_to_text = models.BooleanField(blank=False)
+    text_path = models.CharField(max_length=50, blank=True)
