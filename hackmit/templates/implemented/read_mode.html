@@ -51,36 +51,11 @@
 
         <script>
             $( document ).ready(function () {    
-                var moods = "Fear"
-                var randomSong = ""
-                var currentSongURL = ""
-                
-                var angryList = ["mafia", "babel"]
-                var happyList = ["coffee", "colorful", "inspiration", "jazzy", "spring"]
-                var surpriseList = ["cookies", "magical", "marionette", "morning", "reunion", "simple"]
-                var sadList = ["preview", "raindrops", "stone"]
-                var fearList = ["impulse", "logic", "silent", "takehimout", "thrilling"]
+                var moods = {{mood_number}};
+                var NewMood = 0;
+                var audio = document.getElementById("myAudio");
 
-                var audio = document.getElementById("myAudio")
-
-                function moodToSong(mainMood) {
-                    if (mainMood == "Angry") {
-                        randomSong = "music/angry/" + angryList[Math.floor(Math.random() * 2)] + ".mp3"
-                    }
-                    else if (mainMood == "Happy") {
-                        randomSong = "music/happy/" + happyList[Math.floor(Math.random() * 5)] + ".mp3"     
-                    }
-                    else if (mainMood == "Surprise") {
-                        randomSong = "music/surprise/" + surpriseList[Math.floor(Math.random() * 6)] + ".mp3"
-                    }
-                    else if (mainMood == "Sad") {
-                        randomSong = "music/sad/" + sadList[Math.floor(Math.random() * 3)] + ".mp3"  
-                    }
-                    else if (mainMood == "Fear") {
-                        randomSong = "music/fear/" + fearList[Math.floor(Math.random() * 5)] + ".mp3"    
-                    }
-                    audio.setAttribute("src", randomSong)
-                }
+                audio.setAttribute("src", "http://127.0.0.1:8000/get_music/" + moods + "/");
 
                 $('.fa-play-circle').on('click', function() {
                     audio.play();
@@ -90,13 +65,19 @@
                     audio.pause();
                 });
 
-                audio.onended = function() {
-                    moodToSong(moods)
-                    audio.play()
-                };
+                $('.fa-angle-double-right').on('click', function() {
+                    newMood = {{mood_number}};
+                    audio.setAttribute("src", "http://127.0.0.1:8000/get_music/" + newMood + "/");
+                    audio.play();
+                })
 
-                moodToSong(moods)
+                $('.fa-angle-double-left').on('click', function() {
+                    newMood = {{mood_number}};
+                    audio.setAttribute("src", "http://127.0.0.1:8000/get_music/" + newMood + "/");
+                    audio.play();
+                })
 
+                audio.play();
             });
         </script>
     </body>
