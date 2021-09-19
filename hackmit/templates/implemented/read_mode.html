@@ -56,10 +56,19 @@
         <script>
             $( document ).ready(function () {    
                 var moods = {{mood_number}};
-                var NewMood = 0;
+                var newMood = 0;
                 var audio = document.getElementById("myAudio");
 
-                audio.setAttribute("src", "http://127.0.0.1:8000/get_music/" + moods + "/");
+                function linkProcessing(url) {
+                    const userAction = async() => {
+                        const response = await fetch (url);
+                        const myJson = await response.json();
+                        return myJson["music_url"]
+                    }
+                }
+
+                var newURL = linkProcessing("http://127.0.0.1:8000/get_music/" + moods + "/")
+                audio.setAttribute("src", newURL);
 
                 $('.fa-play-circle').on('click', function() {
                     audio.play();
@@ -71,13 +80,15 @@
 
                 $('.fa-angle-double-right').on('click', function() {
                     newMood = {{mood_number}};
-                    audio.setAttribute("src", "http://127.0.0.1:8000/get_music/" + newMood + "/");
+                    var newURL2 = linkProcessing("http://127.0.0.1:8000/get_music/" + newMood + "/")
+                    audio.setAttribute("src", newURL2);
                     audio.play();
                 })
 
                 $('.fa-angle-double-left').on('click', function() {
                     newMood = {{mood_number}};
-                    audio.setAttribute("src", "http://127.0.0.1:8000/get_music/" + newMood + "/");
+                    var newURL2 = linkProcessing("http://127.0.0.1:8000/get_music/" + newMood + "/")
+                    audio.setAttribute("src", newURL2);
                     audio.play();
                 })
 
