@@ -1,0 +1,31 @@
+I210919 11:23:59.162431 1 util/log/file_sync_buffer.go:238 ⋮ [config]   file created at: 2021/09/19 11:23:59
+I210919 11:23:59.162568 1 util/log/file_sync_buffer.go:238 ⋮ [config]   running on machine: ‹kevinas28›
+I210919 11:23:59.162593 1 util/log/file_sync_buffer.go:238 ⋮ [config]   binary: CockroachDB CCL v21.1.7 (x86_64-unknown-linux-gnu, built 2021/08/09 17:55:28, go1.15.14)
+I210919 11:23:59.162605 1 util/log/file_sync_buffer.go:238 ⋮ [config]   arguments: ‹[cockroach start-single-node]›
+I210919 11:23:59.162617 1 util/log/file_sync_buffer.go:238 ⋮ [config]   log format (utf8=✓): crdb-v2
+I210919 11:23:59.162628 1 util/log/file_sync_buffer.go:238 ⋮ [config]   line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid [chan@]file:line redactionmark \[tags\] [counter] msg
+I210919 11:23:59.161781 1 server/status/recorder.go:629 ⋮ [-] 1  ‹available memory from cgroups is unsupported, using system memory 12 GiB instead: can't read available memory from cgroup v2 at /sys/fs/cgroup/unified/user.slice/user-1000.slice/session-3.scope/memory.max: open /sys/fs/cgroup/unified/user.slice/user-1000.slice/session-3.scope/memory.max: no such file or directory›
+W210919 11:23:59.164495 1 1@cli/start.go:976 ⋮ [-] 2  ‹Using the default setting for --cache (128 MiB).›
+W210919 11:23:59.164495 1 1@cli/start.go:976 ⋮ [-] 2 +‹  A significantly larger value is usually needed for good performance.›
+W210919 11:23:59.164495 1 1@cli/start.go:976 ⋮ [-] 2 +‹  If you have a dedicated server a reasonable setting is --cache=.25 (2.9 GiB).›
+I210919 11:23:59.166330 1 server/status/recorder.go:629 ⋮ [-] 3  ‹available memory from cgroups is unsupported, using system memory 12 GiB instead: can't read available memory from cgroup v2 at /sys/fs/cgroup/unified/user.slice/user-1000.slice/session-3.scope/memory.max: open /sys/fs/cgroup/unified/user.slice/user-1000.slice/session-3.scope/memory.max: no such file or directory›
+I210919 11:23:59.166374 1 1@cli/start.go:1049 ⋮ [-] 4  ‹CockroachDB CCL v21.1.7 (x86_64-unknown-linux-gnu, built 2021/08/09 17:55:28, go1.15.14)›
+I210919 11:23:59.168833 1 server/status/recorder.go:629 ⋮ [-] 5  ‹available memory from cgroups is unsupported, using system memory 12 GiB instead: can't read available memory from cgroup v2 at /sys/fs/cgroup/unified/user.slice/user-1000.slice/session-3.scope/memory.max: open /sys/fs/cgroup/unified/user.slice/user-1000.slice/session-3.scope/memory.max: no such file or directory›
+I210919 11:23:59.168934 1 server/config.go:431 ⋮ [-] 6  system total memory: ‹12 GiB›
+I210919 11:23:59.169387 1 server/config.go:433 ⋮ [-] 7  server configuration:
+I210919 11:23:59.169387 1 server/config.go:433 ⋮ [-] 7 +‹max offset             500000000›
+I210919 11:23:59.169387 1 server/config.go:433 ⋮ [-] 7 +‹cache size             128 MiB›
+I210919 11:23:59.169387 1 server/config.go:433 ⋮ [-] 7 +‹SQL memory pool size   2.9 GiB›
+I210919 11:23:59.169387 1 server/config.go:433 ⋮ [-] 7 +‹scan interval          10m0s›
+I210919 11:23:59.169387 1 server/config.go:433 ⋮ [-] 7 +‹scan min idle time     10ms›
+I210919 11:23:59.169387 1 server/config.go:433 ⋮ [-] 7 +‹scan max idle time     1s›
+I210919 11:23:59.169387 1 server/config.go:433 ⋮ [-] 7 +‹event log enabled      true›
+I210919 11:23:59.171929 1 1@cli/start.go:961 ⋮ [-] 8  process identity: ‹uid 1000 euid 1000 gid 1000 egid 1000›
+I210919 11:23:59.200745 1 1@cli/start.go:1129 ⋮ [-] 9  GEOS loaded from directory ‹/usr/local/lib/cockroach›
+I210919 11:23:59.200802 1 1@cli/start.go:528 ⋮ [-] 10  starting cockroach node
+I210919 11:23:59.799066 16 server/config.go:568 ⋮ [n?] 11  1 storage engine‹› initialized
+I210919 11:23:59.799232 16 server/config.go:571 ⋮ [n?] 12  ‹Pebble cache size: 128 MiB›
+I210919 11:23:59.799280 16 server/config.go:571 ⋮ [n?] 13  ‹store 0: RocksDB, max size 0 B, max open file limit 10000›
+E210919 11:23:59.951684 1 1@cli/error.go:399 ⋮ [-] 14  ‹ERROR: cannot load certificates.›
+E210919 11:23:59.951684 1 1@cli/error.go:399 ⋮ [-] 14 +‹Check your certificate settings, set --certs-dir, or use --insecure for insecure clusters.›
+E210919 11:23:59.951684 1 1@cli/error.go:399 ⋮ [-] 14 +‹failed to start server: problem using security settings: no certificates found; does certs dir exist?›

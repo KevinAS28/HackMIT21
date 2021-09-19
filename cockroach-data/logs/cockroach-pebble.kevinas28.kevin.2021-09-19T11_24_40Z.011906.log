@@ -1,0 +1,20 @@
+I210919 11:24:40.331078 40 util/log/file_sync_buffer.go:238 ⋮ [config]   file created at: 2021/09/19 11:24:40
+I210919 11:24:40.331138 40 util/log/file_sync_buffer.go:238 ⋮ [config]   running on machine: ‹kevinas28›
+I210919 11:24:40.331151 40 util/log/file_sync_buffer.go:238 ⋮ [config]   binary: CockroachDB CCL v21.1.7 (x86_64-unknown-linux-gnu, built 2021/08/09 17:55:28, go1.15.14)
+I210919 11:24:40.331160 40 util/log/file_sync_buffer.go:238 ⋮ [config]   arguments: ‹[cockroach start-single-node --insecure]›
+I210919 11:24:40.331184 40 util/log/file_sync_buffer.go:238 ⋮ [config]   log format (utf8=✓): crdb-v2
+I210919 11:24:40.331191 40 util/log/file_sync_buffer.go:238 ⋮ [config]   line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid [chan@]file:line redactionmark \[tags\] [counter] msg
+I210919 11:24:40.330533 40 3@vendor/github.com/cockroachdb/pebble/compaction.go:1985 ⋮ [n?,pebble,s?] 1  [JOB 1] flushing: sstable created 000007
+I210919 11:24:40.594156 40 3@vendor/github.com/cockroachdb/pebble/open.go:305 ⋮ [n?,pebble,s?] 2  [JOB 1] WAL created 000008
+I210919 11:24:40.827538 40 3@vendor/github.com/cockroachdb/pebble/version_set.go:457 ⋮ [n?,pebble,s?] 3  [JOB 1] MANIFEST created 000009
+I210919 11:24:40.914647 58 3@vendor/github.com/cockroachdb/pebble/compaction.go:1791 ⋮ [n?,pebble,s?] 4  [JOB 3] compacting(move) L0 [000007] (15 K) + L6 [] (0 B)
+I210919 11:24:40.914982 57 3@vendor/github.com/cockroachdb/pebble/table_stats.go:118 ⋮ [n?,pebble,s?] 6  [JOB 2] all initial table stats loaded
+I210919 11:24:40.914735 56 3@vendor/github.com/cockroachdb/pebble/compaction.go:2702 ⋮ [n?,pebble,s?] 5  [JOB 1] WAL deleted 000004
+I210919 11:24:40.994171 58 3@vendor/github.com/cockroachdb/pebble/compaction.go:1832 ⋮ [n?,pebble,s?] 7  [JOB 3] compacted(move) L0 [000007] (15 K) + L6 [] (0 B) -> L6 [000007] (15 K), in 0.0s, output rate 2.6 G/s
+I210919 11:24:40.994304 56 3@vendor/github.com/cockroachdb/pebble/compaction.go:2709 ⋮ [n?,pebble,s?] 8  [JOB 1] MANIFEST deleted 000005
+I210919 11:24:41.268933 40 3@vendor/github.com/cockroachdb/pebble/version_set.go:156 ⋮ [n?,pebble,s?] 9  [JOB 1] MANIFEST created 000001
+I210919 11:24:41.372047 40 3@vendor/github.com/cockroachdb/pebble/open.go:305 ⋮ [n?,pebble,s?] 10  [JOB 1] WAL created 000002
+I210919 11:24:41.505551 48 3@vendor/github.com/cockroachdb/pebble/table_stats.go:118 ⋮ [n?,pebble,s‹temp›] 11  [JOB 2] all initial table stats loaded
+I210919 11:24:43.284570 155 3@vendor/github.com/cockroachdb/pebble/db.go:1449 ⋮ [n1,pebble,s1] 12  [JOB 4] WAL created 000011
+I210919 11:25:03.518539 140 3@vendor/github.com/cockroachdb/pebble/db.go:1449 ⋮ [n1,pebble,s1] 13  [JOB 5] WAL created 000012
+I210919 11:26:03.546412 151 3@vendor/github.com/cockroachdb/pebble/db.go:1449 ⋮ [n1,pebble,s1] 14  [JOB 6] WAL created 000013

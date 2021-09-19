@@ -1,0 +1,85 @@
+I210919 11:24:26.360109 1 util/log/file_sync_buffer.go:238 ⋮ [config]   file created at: 2021/09/19 11:24:26
+I210919 11:24:26.360135 1 util/log/file_sync_buffer.go:238 ⋮ [config]   running on machine: ‹kevinas28›
+I210919 11:24:26.360153 1 util/log/file_sync_buffer.go:238 ⋮ [config]   binary: CockroachDB CCL v21.1.7 (x86_64-unknown-linux-gnu, built 2021/08/09 17:55:28, go1.15.14)
+I210919 11:24:26.360167 1 util/log/file_sync_buffer.go:238 ⋮ [config]   arguments: ‹[cockroach start-single-node --insecure]›
+I210919 11:24:26.360181 1 util/log/file_sync_buffer.go:238 ⋮ [config]   log format (utf8=✓): crdb-v2
+I210919 11:24:26.360192 1 util/log/file_sync_buffer.go:238 ⋮ [config]   line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid [chan@]file:line redactionmark \[tags\] [counter] msg
+W210919 11:24:26.359820 1 1@cli/start.go:1010 ⋮ [-] 1  ALL SECURITY CONTROLS HAVE BEEN DISABLED!
+W210919 11:24:26.359820 1 1@cli/start.go:1010 ⋮ [-] 1 +
+W210919 11:24:26.359820 1 1@cli/start.go:1010 ⋮ [-] 1 +This mode is intended for non-production testing only.
+W210919 11:24:26.359820 1 1@cli/start.go:1010 ⋮ [-] 1 +
+W210919 11:24:26.359820 1 1@cli/start.go:1010 ⋮ [-] 1 +In this mode:
+W210919 11:24:26.359820 1 1@cli/start.go:1010 ⋮ [-] 1 +- Your cluster is open to any client that can access ‹any of your IP addresses›.
+W210919 11:24:26.359820 1 1@cli/start.go:1010 ⋮ [-] 1 +- Intruders with access to your machine or network can observe client-server traffic.
+W210919 11:24:26.359820 1 1@cli/start.go:1010 ⋮ [-] 1 +- Intruders can log in without password and read or write any data in the cluster.
+W210919 11:24:26.359820 1 1@cli/start.go:1010 ⋮ [-] 1 +- Intruders can consume all your server's resources and cause unavailability.
+I210919 11:24:26.360835 1 1@cli/start.go:1020 ⋮ [-] 2  To start a secure server without mandating TLS for clients,
+I210919 11:24:26.360835 1 1@cli/start.go:1020 ⋮ [-] 2 +consider --accept-sql-without-tls instead. For other options, see:
+I210919 11:24:26.360835 1 1@cli/start.go:1020 ⋮ [-] 2 +
+I210919 11:24:26.360835 1 1@cli/start.go:1020 ⋮ [-] 2 +- ‹https://go.crdb.dev/issue-v/53404/v21.1›
+I210919 11:24:26.360835 1 1@cli/start.go:1020 ⋮ [-] 2 +- https://www.cockroachlabs.com/docs/v21.1/secure-a-cluster.html
+I210919 11:24:26.361369 1 server/status/recorder.go:629 ⋮ [-] 3  ‹available memory from cgroups is unsupported, using system memory 12 GiB instead: can't read available memory from cgroup v2 at /sys/fs/cgroup/unified/user.slice/user-1000.slice/session-3.scope/memory.max: open /sys/fs/cgroup/unified/user.slice/user-1000.slice/session-3.scope/memory.max: no such file or directory›
+W210919 11:24:26.361410 1 1@cli/start.go:976 ⋮ [-] 4  ‹Using the default setting for --cache (128 MiB).›
+W210919 11:24:26.361410 1 1@cli/start.go:976 ⋮ [-] 4 +‹  A significantly larger value is usually needed for good performance.›
+W210919 11:24:26.361410 1 1@cli/start.go:976 ⋮ [-] 4 +‹  If you have a dedicated server a reasonable setting is --cache=.25 (2.9 GiB).›
+I210919 11:24:26.361785 1 server/status/recorder.go:629 ⋮ [-] 5  ‹available memory from cgroups is unsupported, using system memory 12 GiB instead: can't read available memory from cgroup v2 at /sys/fs/cgroup/unified/user.slice/user-1000.slice/session-3.scope/memory.max: open /sys/fs/cgroup/unified/user.slice/user-1000.slice/session-3.scope/memory.max: no such file or directory›
+I210919 11:24:26.361807 1 1@cli/start.go:1049 ⋮ [-] 6  ‹CockroachDB CCL v21.1.7 (x86_64-unknown-linux-gnu, built 2021/08/09 17:55:28, go1.15.14)›
+I210919 11:24:26.365030 1 server/status/recorder.go:629 ⋮ [-] 7  ‹available memory from cgroups is unsupported, using system memory 12 GiB instead: can't read available memory from cgroup v2 at /sys/fs/cgroup/unified/user.slice/user-1000.slice/session-3.scope/memory.max: open /sys/fs/cgroup/unified/user.slice/user-1000.slice/session-3.scope/memory.max: no such file or directory›
+I210919 11:24:26.365072 1 server/config.go:431 ⋮ [-] 8  system total memory: ‹12 GiB›
+I210919 11:24:26.365089 1 server/config.go:433 ⋮ [-] 9  server configuration:
+I210919 11:24:26.365089 1 server/config.go:433 ⋮ [-] 9 +‹max offset             500000000›
+I210919 11:24:26.365089 1 server/config.go:433 ⋮ [-] 9 +‹cache size             128 MiB›
+I210919 11:24:26.365089 1 server/config.go:433 ⋮ [-] 9 +‹SQL memory pool size   2.9 GiB›
+I210919 11:24:26.365089 1 server/config.go:433 ⋮ [-] 9 +‹scan interval          10m0s›
+I210919 11:24:26.365089 1 server/config.go:433 ⋮ [-] 9 +‹scan min idle time     10ms›
+I210919 11:24:26.365089 1 server/config.go:433 ⋮ [-] 9 +‹scan max idle time     1s›
+I210919 11:24:26.365089 1 server/config.go:433 ⋮ [-] 9 +‹event log enabled      true›
+I210919 11:24:26.365149 1 1@cli/start.go:961 ⋮ [-] 10  process identity: ‹uid 1000 euid 1000 gid 1000 egid 1000›
+I210919 11:24:26.369825 1 1@cli/start.go:1129 ⋮ [-] 11  GEOS loaded from directory ‹/usr/local/lib/cockroach›
+I210919 11:24:26.369883 1 1@cli/start.go:528 ⋮ [-] 12  starting cockroach node
+I210919 11:24:26.948844 53 server/config.go:568 ⋮ [n?] 13  1 storage engine‹› initialized
+I210919 11:24:26.948927 53 server/config.go:571 ⋮ [n?] 14  ‹Pebble cache size: 128 MiB›
+I210919 11:24:26.948954 53 server/config.go:571 ⋮ [n?] 15  ‹store 0: RocksDB, max size 0 B, max open file limit 10000›
+I210919 11:24:27.548823 53 1@server/server.go:928 ⋮ [n?] 16  monitoring forward clock jumps based on server.clock.forward_jump_check_enabled
+I210919 11:24:29.890837 53 server/init.go:196 ⋮ [n?] 17  no stores initialized
+I210919 11:24:29.891036 53 server/init.go:197 ⋮ [n?] 18  awaiting `cockroach init` or join with an already initialized node
+I210919 11:24:29.891119 53 server/init.go:261 ⋮ [n?] 19  cluster ‹b3f2edd6-6fef-4d0a-8ac1-5e72ec2fe741› has been created
+I210919 11:24:29.891201 53 server/init.go:262 ⋮ [n?] 20  allocated node ID: n1 (for self)
+I210919 11:24:29.891255 53 server/init.go:263 ⋮ [n?] 21  active cluster version: 21.1
+I210919 11:24:29.945630 49 1@server/server.go:1567 ⋮ [n?] 22  connecting to gossip network to verify cluster ID ‹"b3f2edd6-6fef-4d0a-8ac1-5e72ec2fe741"›
+W210919 11:24:29.945776 53 1@cli/start.go:929 ⋮ [-] 23  neither --listen-addr nor --advertise-addr was specified.
+W210919 11:24:29.945776 53 1@cli/start.go:929 ⋮ [-] 23 +The server will advertise ‹"kevinas28"› to other nodes, is this routable?
+W210919 11:24:29.945776 53 1@cli/start.go:929 ⋮ [-] 23 +
+W210919 11:24:29.945776 53 1@cli/start.go:929 ⋮ [-] 23 +Consider using:
+W210919 11:24:29.945776 53 1@cli/start.go:929 ⋮ [-] 23 +- for local-only servers:  --listen-addr=localhost
+W210919 11:24:29.945776 53 1@cli/start.go:929 ⋮ [-] 23 +- for multi-node clusters: --advertise-addr=<host/IP addr>
+I210919 11:24:30.005522 53 gossip/gossip.go:402 ⋮ [n1] 24  NodeDescriptor set to ‹node_id:1 address:<network_field:"tcp" address_field:"kevinas28:26257" > attrs:<> locality:<> ServerVersion:<major_val:21 minor_val:1 patch:0 internal:0 > build_tag:"v21.1.7" started_at:1632050670005512878 cluster_name:"" sql_address:<network_field:"tcp" address_field:"kevinas28:26257" >›
+I210919 11:24:30.006853 30 kv/kvserver/closedts/provider/provider.go:135 ⋮ [ct-closer] 25  disabling legacy closed-timestamp mechanism; the new one is enabled
+I210919 11:24:30.016682 53 server/node.go:388 ⋮ [n1] 26  initialized store s1
+I210919 11:24:30.016759 53 kv/kvserver/stores.go:250 ⋮ [n1] 27  read 0 node addresses from persistent storage
+I210919 11:24:30.017288 49 1@server/server.go:1570 ⋮ [n1] 28  node connected via gossip
+W210919 11:24:30.017387 184 kv/kvserver/store.go:1701 ⋮ [n1,s1,r6/1:‹/Table/{SystemCon…-11}›] 29  could not gossip system config: ‹[NotLeaseHolderError] lease acquisition attempt lost to another lease; r6: replica (n1,s1):1 not lease holder; lease holder unknown›
+W210919 11:24:30.017387 184 kv/kvserver/store.go:1701 ⋮ [n1,s1,r6/1:‹/Table/{SystemCon…-11}›] 29 +(1) ‹[NotLeaseHolderError] lease acquisition attempt lost to another lease; r6: replica (n1,s1):1 not lease holder; lease holder unknown›
+W210919 11:24:30.017387 184 kv/kvserver/store.go:1701 ⋮ [n1,s1,r6/1:‹/Table/{SystemCon…-11}›] 29 +Error types: (1) *roachpb.NotLeaseHolderError
+W210919 11:24:30.061287 184 kv/kvserver/store.go:1701 ⋮ [n1,s1,r6/1:‹/Table/{SystemCon…-11}›] 30  could not gossip system config: ‹[NotLeaseHolderError] lease acquisition attempt lost to another lease; r6: replica (n1,s1):1 not lease holder; lease holder unknown›
+W210919 11:24:30.061287 184 kv/kvserver/store.go:1701 ⋮ [n1,s1,r6/1:‹/Table/{SystemCon…-11}›] 30 +(1) ‹[NotLeaseHolderError] lease acquisition attempt lost to another lease; r6: replica (n1,s1):1 not lease holder; lease holder unknown›
+W210919 11:24:30.061287 184 kv/kvserver/store.go:1701 ⋮ [n1,s1,r6/1:‹/Table/{SystemCon…-11}›] 30 +Error types: (1) *roachpb.NotLeaseHolderError
+I210919 11:24:30.078948 53 server/node.go:465 ⋮ [n1] 31  started with engine type ‹2›
+I210919 11:24:30.079036 53 server/node.go:467 ⋮ [n1] 32  started with attributes ‹[]›
+W210919 11:24:30.172572 184 kv/kvserver/store.go:1701 ⋮ [n1,s1,r6/1:‹/Table/{SystemCon…-11}›] 33  could not gossip system config: ‹[NotLeaseHolderError] lease acquisition attempt lost to another lease; r6: replica (n1,s1):1 not lease holder; lease holder unknown›
+W210919 11:24:30.172572 184 kv/kvserver/store.go:1701 ⋮ [n1,s1,r6/1:‹/Table/{SystemCon…-11}›] 33 +(1) ‹[NotLeaseHolderError] lease acquisition attempt lost to another lease; r6: replica (n1,s1):1 not lease holder; lease holder unknown›
+W210919 11:24:30.172572 184 kv/kvserver/store.go:1701 ⋮ [n1,s1,r6/1:‹/Table/{SystemCon…-11}›] 33 +Error types: (1) *roachpb.NotLeaseHolderError
+I210919 11:24:30.190154 53 server/goroutinedumper/goroutinedumper.go:120 ⋮ [n1] 34  writing goroutine dumps to ‹/media/data/programming/python_saya/hackmit_project/HackMIT21/cockroach-data/logs/goroutine_dump›
+I210919 11:24:30.191098 53 server/heapprofiler/heapprofiler.go:49 ⋮ [n1] 35  writing go heap profiles to ‹/media/data/programming/python_saya/hackmit_project/HackMIT21/cockroach-data/logs/heap_profiler› at least every 1h0m0s
+I210919 11:24:30.191287 53 server/heapprofiler/cgoprofiler.go:53 ⋮ [n1] 36  to enable jmalloc profiling: "export MALLOC_CONF=prof:true" or "ln -s prof:true /etc/malloc.conf"
+I210919 11:24:30.191994 53 server/heapprofiler/statsprofiler.go:54 ⋮ [n1] 37  writing memory stats to ‹/media/data/programming/python_saya/hackmit_project/HackMIT21/cockroach-data/logs/heap_profiler› at last every 1h0m0s
+I210919 11:24:30.192076 53 1@server/server.go:1697 ⋮ [n1] 38  starting http server at ‹[::]:8080› (use: ‹kevinas28:8080›)
+I210919 11:24:30.192141 53 1@server/server.go:1704 ⋮ [n1] 39  starting grpc/postgres server at ‹[::]:26257›
+I210919 11:24:30.192188 53 1@server/server.go:1705 ⋮ [n1] 40  advertising CockroachDB node at ‹kevinas28:26257›
+W210919 11:24:30.378451 184 kv/kvserver/store.go:1701 ⋮ [n1,s1,r6/1:‹/Table/{SystemCon…-11}›] 41  could not gossip system config: ‹[NotLeaseHolderError] lease acquisition attempt lost to another lease; r6: replica (n1,s1):1 not lease holder; lease holder unknown›
+W210919 11:24:30.378451 184 kv/kvserver/store.go:1701 ⋮ [n1,s1,r6/1:‹/Table/{SystemCon…-11}›] 41 +(1) ‹[NotLeaseHolderError] lease acquisition attempt lost to another lease; r6: replica (n1,s1):1 not lease holder; lease holder unknown›
+W210919 11:24:30.378451 184 kv/kvserver/store.go:1701 ⋮ [n1,s1,r6/1:‹/Table/{SystemCon…-11}›] 41 +Error types: (1) *roachpb.NotLeaseHolderError
+I210919 11:24:30.450151 1 1@cli/start.go:755 ⋮ [-] 42  received signal 'interrupt'
+I210919 11:24:30.450717 1 1@cli/start.go:839 ⋮ [-] 43  initiating graceful shutdown of server
+I210919 11:24:30.452869 1 1@cli/start.go:896 ⋮ [-] 44  too early to drain; used hard shutdown instead
+E210919 11:24:30.453961 1 1@cli/error.go:399 ⋮ [-] 45  ‹ERROR: interrupted›

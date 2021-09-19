@@ -1,0 +1,9 @@
+I210919 11:23:59.488270 16 util/log/file_sync_buffer.go:238 ⋮ [config]   file created at: 2021/09/19 11:23:59
+I210919 11:23:59.488348 16 util/log/file_sync_buffer.go:238 ⋮ [config]   running on machine: ‹kevinas28›
+I210919 11:23:59.488383 16 util/log/file_sync_buffer.go:238 ⋮ [config]   binary: CockroachDB CCL v21.1.7 (x86_64-unknown-linux-gnu, built 2021/08/09 17:55:28, go1.15.14)
+I210919 11:23:59.488429 16 util/log/file_sync_buffer.go:238 ⋮ [config]   arguments: ‹[cockroach start-single-node]›
+I210919 11:23:59.488472 16 util/log/file_sync_buffer.go:238 ⋮ [config]   log format (utf8=✓): crdb-v2
+I210919 11:23:59.488494 16 util/log/file_sync_buffer.go:238 ⋮ [config]   line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid [chan@]file:line redactionmark \[tags\] [counter] msg
+I210919 11:23:59.487274 16 3@vendor/github.com/cockroachdb/pebble/version_set.go:156 ⋮ [n?,pebble,s?] 1  [JOB 1] MANIFEST created 000001
+I210919 11:23:59.602796 16 3@vendor/github.com/cockroachdb/pebble/open.go:305 ⋮ [n?,pebble,s?] 2  [JOB 1] WAL created 000002
+I210919 11:23:59.799257 54 3@vendor/github.com/cockroachdb/pebble/table_stats.go:118 ⋮ [n?,pebble,s?] 3  [JOB 2] all initial table stats loaded

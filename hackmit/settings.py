@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'hackmit.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django_cockroachdb',
-        'NAME': 'bank',
+        'NAME': 'hackmit',
         'USER': 'test',
         'PASSWORD': '12345',
         'HOST': 'localhost',
